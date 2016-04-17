@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2">
+    <!-- 定义一个文本框，使用绝对定位 -->
+    <TextView
+        android:layout_x="10dp"
+        android:layout_y="310dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名："
+        android:textColor="#ff8a43"
+        android:textSize="20dp" />
+    <!-- 定义一个文本编辑框，使用绝对定位 -->
+    <EditText
+        android:layout_x="80dp"
+        android:layout_y="300dp"
+        android:layout_width="wrap_content"
+        android:width="250dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ff5557"
+        android:gravity="center_horizontal" />
+    <!-- 定义一个文本框，使用绝对定位 -->
+    <TextView
+        android:layout_x="10dp"
+        android:layout_y="350dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密    码："
+        android:textColor="#ff8a43"
+        android:textSize="20dp"
+        android:gravity="bottom"
+        />
+    <!-- 定义一个文本编辑框，使用绝对定位 -->
+    <EditText
+        android:layout_x="80dp"
+        android:layout_y="340dp"
+        android:layout_width="wrap_content"
+        android:width="250dp"
+        android:layout_height="wrap_content"
+        android:password="true"
+        android:textColor="#ff5557"
+        android:gravity="center_horizontal" />
+    <!-- 定义一个按钮，使用绝对定位 -->
+    <Button
+        android:id="@+id/bn6"
+        android:layout_x="70dp"
+        android:layout_y="400dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登   录"
+        android:onClick="login"/>
+
+    <Button
+        android:id="@+id/bn7"
+        android:layout_x="200dp"
+        android:layout_y="400dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注   册"
+        android:onClick="register"/>
+
+</AbsoluteLayout>

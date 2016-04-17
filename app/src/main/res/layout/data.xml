@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_alignParentBottom="true">
+
+    <!-- 表格1-伸展 -->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff0000"
+        android:shrinkColumns="0,1,2"
+        android:layout_y="0dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="积分榜" />
+
+    </TableLayout>
+
+    <!-- 表格2-收缩 -->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFCD6B"
+        android:stretchColumns="0,1,2"
+        android:layout_y="50dp">
+
+        <TableRow android:layout_gravity="center">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="战队"
+                android:id="@+id/bn9"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="战绩"
+                android:id="@+id/text3"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="积分"
+                android:id="@+id/text4"
+                android:layout_gravity="center" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFCD6B"
+        android:stretchColumns="0,1,2"
+        android:layout_y="100dp">
+
+        <TableRow android:layout_gravity="center"
+            android:id="@+id/actually">
+
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="RNG"
+                android:id="@+id/bn10"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25/5"
+                android:id="@+id/text5"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25"
+                android:id="@+id/text6"
+                android:layout_gravity="center" />
+        </TableRow>
+    </TableLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff0f5"
+        android:id="@+id/Match"
+        android:stretchColumns="0,1,2,3"
+        android:weightSum="1"
+         >
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn1"
+            android:text="LPL"
+            />
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn2"
+            android:text="LCK"
+            />
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn3"
+            android:text="LMS"
+            />
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn4"
+            android:text="外卡"
+            android:layout_weight="0.26" />
+    </TableRow>
+
+</LinearLayout>

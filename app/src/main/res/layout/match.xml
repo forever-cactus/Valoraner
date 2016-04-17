@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Base.TextAppearance.AppCompat.SearchResult.Title">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="今日赛事"
+        android:textSize="80px"
+        android:textStyle="bold"
+        android:layout_y="50px"
+        style="@style/AppTheme" />
+    <ListView
+        android:id="@+id/MyListView2"
+        android:layout_width="310dp"
+        android:layout_height="631dp"
+        android:layout_y="275px"
+        android:scrollingCache="true"
+        android:layout_x="50dp"></ListView>
+
+</AbsoluteLayout>

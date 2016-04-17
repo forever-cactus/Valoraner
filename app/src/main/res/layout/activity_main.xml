@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity= "right|center_vertical"
+    android:background="@drawable/back1">
+    <Button
+        android:id="@+id/bn1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="用户"/>
+    <Button
+        android:id="@+id/bn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="赛事"/>
+    <Button
+        android:id="@+id/bn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数据"/>
+    <Button
+        android:id="@+id/bn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选手"/>
+    <Button
+        android:id="@+id/bn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="英雄"/>
+</LinearLayout>
+    <!-- From: file:/G:/publish/codes/02/2.2/LinearLayoutTest/app/src/main/res/layout/main.xml -->
