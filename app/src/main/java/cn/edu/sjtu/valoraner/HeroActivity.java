@@ -9,6 +9,6 @@ import android.os.Bundle;
 public class HeroActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.data);
+        setContentView(R.layout.hero);
     }
 }
