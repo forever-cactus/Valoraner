@@ -2,7 +2,8 @@
 <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    style="@style/Base.TextAppearance.AppCompat.SearchResult.Title">
+    style="@style/Base.TextAppearance.AppCompat.SearchResult.Title"
+    android:background="#94988aff">
 
     <TextView
         android:layout_width="fill_parent"
@@ -11,13 +12,16 @@
         android:textSize="80px"
         android:textStyle="bold"
         android:layout_y="50px"
-        style="@style/AppTheme" />
+        style="@style/AppTheme"
+        android:gravity="center_vertical|center_horizontal"
+        android:typeface="normal" />
     <ListView
         android:id="@+id/MyListView2"
-        android:layout_width="310dp"
-        android:layout_height="631dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_y="275px"
         android:scrollingCache="true"
-        android:layout_x="50dp"></ListView>
+        android:theme="@style/TextAppearance.StatusBar.EventContent.Line2"
+        android:transitionGroup="false"></ListView>
 
 </AbsoluteLayout>

@@ -21,7 +21,7 @@
 
         <activity android:name=".RegisterActivity"
             android:label="register_time"></activity>
-        
+
         <activity android:name=".UsrActivity"
             android:label="usr_time"></activity>
 
@@ -35,6 +35,9 @@
             android:label="player_time"></activity>
 
         <activity android:name=".HeroActivity"
+            android:label="hero_time"></activity>
+
+        <activity android:name=".HeroIntroduce1"
             android:label="hero_time"></activity>
     </application>
 

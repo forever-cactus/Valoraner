@@ -5,6 +5,7 @@
     android:stretchColumns="1"
     android:background="@drawable/annie"
     android:gravity="center">
+
     <TableRow android:background="#8dffffff">
         <TextView
             android:layout_width="match_parent"
@@ -21,7 +22,8 @@
             android:gravity="center_horizontal"
             android:textColor="#faff09"
             android:id="@+id/txt0"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_span="3" />
     </TableRow>
     <TableRow android:background="#8dffffff">
         <TextView
@@ -39,46 +41,8 @@
             android:inputType="numberPassword"
             android:gravity="center_horizontal"
             android:textColor="#000000"
-            android:textStyle="bold" />
-    </TableRow>
-    <TableRow android:background="#8dffffff">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="年    龄："
-            android:textSize="16sp"
-            android:textColor="#5b7dff"
-            android:id="@+id/txt2"
-            android:layout_marginLeft="5dp" />
-        <!-- inputType="number"表明是数值输入框 -->
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:gravity="center_horizontal"
-            android:textColor="#000000"
-            android:textStyle="bold" />
-    </TableRow>
-    <TableRow
-        android:background="#8dffffff"
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="生    日："
-            android:textSize="16sp"
-            android:textColor="#5b7dff"
-            android:id="@+id/txt3"
-            android:layout_marginLeft="5dp" />
-        <!-- inputType="date"表明是日期输入框 -->
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="date"
-            android:gravity="center_horizontal"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_span="3" />
     </TableRow>
     <TableRow android:background="#8dffffff">
         <TextView
@@ -96,8 +60,63 @@
             android:inputType="phone"
             android:gravity="center_horizontal"
             android:textColor="#000000"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_span="3" />
     </TableRow>
+    <TableRow android:background="#8dffffff">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="生   日："
+            android:textSize="16sp"
+            android:textColor="#5b7dff"
+            android:id="@+id/txt2"
+            android:layout_marginLeft="5dp" />
+        <Spinner
+            android:id="@+id/sp_year"
+            android:layout_width="90dp"
+            android:layout_height="30dp" />
+
+        <Spinner
+            android:id="@+id/sp_month"
+            android:layout_width="90dp"
+            android:layout_height="30dp" />
+
+        <Spinner
+            android:id="@+id/sp_day"
+            android:layout_width="90dp"
+            android:layout_height="30dp" />
+    </TableRow>
+    <TableRow
+        android:background="#8dffffff"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="国    籍:"
+            android:textSize="16sp"
+            android:textColor="#5b7dff"
+            android:id="@+id/txt3"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="     "/>
+
+        <Spinner
+            android:id="@+id/spi3"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:entries="@array/books"
+            android:layout_column="1"
+            android:layout_span="3" />
+    </TableRow>
+
+
+
     <Button
         android:id="@+id/bn8"
         android:layout_width="wrap_content"

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="英雄介绍"
+            android:textSize="30sp"
+            android:gravity="center_horizontal" />
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+                <ImageView
+                    android:id="@+id/ImageView1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/aurelionsol"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="铸星龙王-奥瑞利安.素尔        金币：6300                    点券：4500"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="0.20"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"
+                    android:text="技能介绍:"/>
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/ImageView1.0"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/skill0"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="星原之准(被动):行星围绕着奥瑞利安·索尔，并对被它们命中的敌人造成20-70 (+18-35%)(基于等级)的魔法伤害。"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/ImageView1.1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/skill1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="top|center_vertical" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="星河急涌(Q):第一段施放：奥瑞利安·索尔创造一个新的星核，星核会随着时间成长，并为奥瑞利安·索尔提供10%移动速度加成。
+星核将在到达奥瑞利安·索尔的外轨时爆炸，同时施加70/110/150/190/230(+0.65)魔法伤害和持续1.1/1.2/1.3/1.4/1.5秒的晕眩效果。
+第二段施放：提前引爆星核。"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/ImageView1.2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/skill2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="星穹暴涨(W):被动：将护体行星的基础伤害提升10/20/30/40/50。
+激活：奥瑞利安·索尔将护体行星推入外轨并造成150%伤害，总共造成20-70 (+18-35%)(基于等级)(+0.5)魔法伤害。"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/ImageView1.3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/skill3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="星流横溢(E):被动：在移动时产生逃逸速度。连续朝着一个方向移动，会获得不断提升的移动速度加成，最多可获得25/30/35/40/45%移动速度加成。
+承受来自英雄或防御塔的伤害，会使这个被动效果重置。
+主动：在拥有100逃逸速度时，可朝着选定方向飞行3000/4000/5000/6000/7000码，中途可通过点击来取消飞行。在飞行时，奥瑞利安·索尔既能看见隔墙的单位，也能被隔墙的单位看见。"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/ImageView1.4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/skill4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="星弦高落(R):喷吐出一道纯净的星火，造成200/300/400(+0.7)魔法伤害以及持续两秒的40/50/60%减速效果。
+星火还会将附近的敌人击退至奥瑞利安·索尔的外轨。"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

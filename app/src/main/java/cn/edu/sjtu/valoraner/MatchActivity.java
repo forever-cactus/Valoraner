@@ -25,14 +25,14 @@ public class MatchActivity extends Activity{
         List<HashMap<String, Object>> mylist = new ArrayList<HashMap<String,Object>>();
         HashMap<String, Object> map = new HashMap<String, Object>();
         map.put("image", R.drawable.edg);
-        map.put("title", "EDG    VS    QG");
-        map.put("image2",R.drawable.qg);
+        map.put("title", "1      :     0");
+        map.put("image2", R.drawable.lgd);
         mylist.add(map);
 
         map = new HashMap<String, Object>();
-        map.put("image", R.drawable.rng);
-        map.put("title", "EDG    VS    QG");
-        map.put("image2",R.drawable.we);
+        map.put("image", R.drawable.ig);
+        map.put("title", "1      :     1");
+        map.put("image2",R.drawable.omg);
         mylist.add(map);
 
         //配置适配器
