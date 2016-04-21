@@ -20,7 +20,8 @@
         android:width="250dp"
         android:layout_height="wrap_content"
         android:textColor="#ff5557"
-        android:gravity="center_horizontal"/>
+        android:gravity="center_horizontal"
+        android:id="@+id/name_login" />
     <!-- 定义一个文本框，使用绝对定位 -->
     <TextView
         android:layout_x="10dp"
@@ -41,7 +42,8 @@
         android:layout_height="wrap_content"
         android:password="true"
         android:textColor="#ff5557"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        android:id="@+id/code_login" />
     <!-- 定义一个按钮，使用绝对定位 -->
     <Button
         android:id="@+id/bn6"

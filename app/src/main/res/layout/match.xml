@@ -1,22 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     style="@style/Base.TextAppearance.AppCompat.SearchResult.Title"
-    android:background="#94988aff">
+    android:background="@drawable/back4">
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="今日赛事"
+        android:text="赛事"
         android:textSize="80px"
         android:textStyle="bold"
         android:layout_y="50px"
         style="@style/AppTheme"
         android:gravity="center_vertical|center_horizontal"
-        android:typeface="normal" />
+        android:typeface="normal"
+        android:textIsSelectable="false"
+        android:textColor="#ffc82a" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="2016-01-01"
+        android:textSize="50px"
+        android:textStyle="bold"
+        style="@style/AppTheme"
+        android:gravity="center_vertical|center_horizontal"
+        android:typeface="normal"
+        android:textIsSelectable="false"
+        android:textColor="#ffc82a"/>
     <ListView
         android:id="@+id/MyListView2"
+        android:divider="#5b3f1b"
+        android:dividerHeight="2px"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_y="275px"
@@ -24,4 +40,4 @@
         android:theme="@style/TextAppearance.StatusBar.EventContent.Line2"
         android:transitionGroup="false"></ListView>
 
-</AbsoluteLayout>
+</LinearLayout>

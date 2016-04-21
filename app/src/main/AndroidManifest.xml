@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cn.edu.sjtu.valoraner" >
 
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="21" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -39,6 +42,7 @@
 
         <activity android:name=".HeroIntroduce1"
             android:label="hero_time"></activity>
+
     </application>
 
 </manifest>
