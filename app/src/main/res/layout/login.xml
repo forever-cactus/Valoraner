@@ -4,47 +4,42 @@
     android:layout_height="match_parent"
     android:background="@drawable/back2">
     <!-- 定义一个文本框，使用绝对定位 -->
-    <TextView
-        android:layout_x="10dp"
-        android:layout_y="310dp"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="用户名："
-        android:textColor="#ff8a43"
-        android:textSize="20dp" />
-    <!-- 定义一个文本编辑框，使用绝对定位 -->
+        android:layout_y="260dp"
+        android:layout_x="55dp"
+        android:orientation="vertical">
+
     <EditText
-        android:layout_x="80dp"
-        android:layout_y="300dp"
         android:layout_width="wrap_content"
-        android:width="250dp"
+        android:layout_centerInParent="true"
         android:layout_height="wrap_content"
         android:textColor="#ff5557"
-        android:gravity="center_horizontal"
-        android:id="@+id/name_login" />
-    <!-- 定义一个文本框，使用绝对定位 -->
-    <TextView
-        android:layout_x="10dp"
-        android:layout_y="350dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="密    码："
-        android:textColor="#ff8a43"
+        android:gravity="center"
+        android:width="250dp"
+        android:hint="name"
         android:textSize="20dp"
-        android:gravity="bottom"
-        />
-    <!-- 定义一个文本编辑框，使用绝对定位 -->
+        android:id="@+id/name_login"
+        android:height="40dp"
+        android:background="#9f9f9f" />
+    <!-- 定义一个文本框，使用绝对定位 -->
     <EditText
-        android:layout_x="80dp"
-        android:layout_y="340dp"
         android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
         android:width="250dp"
+        android:height="40dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/name_login"
         android:password="true"
+        android:hint="code"
+        android:textSize="20dp"
         android:textColor="#ff5557"
-        android:gravity="center_horizontal"
-        android:id="@+id/code_login" />
+        android:gravity="center"
+        android:id="@+id/code_login"
+        android:background="#9f9f9f" />
     <!-- 定义一个按钮，使用绝对定位 -->
+    </LinearLayout>
     <Button
         android:id="@+id/bn6"
         android:layout_x="70dp"
