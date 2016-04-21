@@ -90,6 +90,7 @@ public class RegisterActivity extends Activity{
                     dataDay.add("" + (i < 10 ? "0" + i : i));
                 }
                 adapterSpDay.notifyDataSetChanged();
+                day = dataDay.get(arg2).toString();
             }
 
             @Override
@@ -98,8 +99,11 @@ public class RegisterActivity extends Activity{
             }
         });
 
+        year = spYear.getSelectedItem().toString();
+        month = spMonth.getSelectedItem().toString();
+        nation=spi3.getSelectedItem().toString();
         //get values;
-        spYear.setOnItemSelectedListener(new Spinner.OnItemSelectedListener() {
+        /*spYear.setOnItemSelectedListener(new Spinner.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
                 year = dataYear.get(arg2).toString();
@@ -145,7 +149,7 @@ public class RegisterActivity extends Activity{
             public void onNothingSelected(AdapterView<?> arg0) {
                 // TODO Auto-generated method stub
             }
-        });
+        });*/
     }
 
     private Button.OnClickListener main = new View.OnClickListener() {
