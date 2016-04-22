@@ -6,8 +6,11 @@ import java.util.List;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
 
 /**
  * Created by shqgo on 2016/4/17.
@@ -19,28 +22,25 @@ public class UsrActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.usr);
         list = (ListView) findViewById(R.id.MyListView);
+        TextView usr1=(TextView)findViewById(R.id.usr1);
+        usr1.setText(Usrs.name);
 
         //组织数据源
         List<HashMap<String, String>> mylist = new ArrayList<HashMap<String, String>>();
-        HashMap<String, String> map = new HashMap<String, String>();
-        map.put("itemTitle", "用户名");
-        map.put("itemText", "unkown");
-        mylist.add(map);
-
 
         HashMap<String, String> map1 = new HashMap<String, String>();
-        map1.put("itemTitle", "年龄");
-        map1.put("itemText", "unkown");
+        map1.put("itemTitle","code:");
+        map1.put("itemText", Usrs.code);
         mylist.add(map1);
 
         HashMap<String, String> map2 = new HashMap<String, String>();
-        map2.put("itemTitle", "生日");
-        map2.put("itemText", "unkown");
+        map2.put("itemTitle", "birth:");
+        map2.put("itemText", Usrs.year + "年" + Usrs.month + "月" + Usrs.day + "日");
         mylist.add(map2);
 
         HashMap<String, String> map3 = new HashMap<String, String>();
-        map3.put("itemTitle", "手机");
-        map3.put("itemText", "unkown");
+        map3.put("itemTitle", "phone");
+        map3.put("itemText", Usrs.phone);
         mylist.add(map3);
 
 

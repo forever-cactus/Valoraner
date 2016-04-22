@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/back2">
     <!-- 定义一个文本框，使用绝对定位 -->
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,14 +16,14 @@
         android:layout_width="wrap_content"
         android:layout_centerInParent="true"
         android:layout_height="wrap_content"
-        android:textColor="#ff5557"
+        android:textColor="#4bffcc"
         android:gravity="center"
         android:width="250dp"
         android:hint="name"
         android:textSize="20dp"
         android:id="@+id/name_login"
         android:height="40dp"
-        android:background="#9f9f9f" />
+        android:background="@drawable/shape_textview" />
     <!-- 定义一个文本框，使用绝对定位 -->
     <EditText
         android:layout_width="wrap_content"
@@ -34,10 +35,10 @@
         android:password="true"
         android:hint="code"
         android:textSize="20dp"
-        android:textColor="#ff5557"
+        android:textColor="#4bffcc"
         android:gravity="center"
         android:id="@+id/code_login"
-        android:background="#9f9f9f" />
+        android:background="@drawable/shape_textview" />
     <!-- 定义一个按钮，使用绝对定位 -->
     </LinearLayout>
     <Button
@@ -46,6 +47,7 @@
         android:layout_y="400dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/shape_textview"
         android:text="登   录"
         android:onClick="login"/>
 
@@ -55,6 +57,7 @@
         android:layout_y="400dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/shape_textview"
         android:text="注   册"
         android:onClick="register"/>
 

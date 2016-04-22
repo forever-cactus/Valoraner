@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="英雄介绍"
+                android:textSize="30sp"
+                android:gravity="center_horizontal"
+                android:background = "@drawable/skillbackground"
+                android:textColor="#ffffff" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="89dp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:background = "@drawable/skillbackground">
+                <ImageView
+                    android:id="@+id/ImageView1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/illaoi"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="海兽祭司-俄洛伊                                 金币：6300                    点券：4500"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="0.20"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:orientation="horizontal"
+                android:background = "@drawable/skillbackground">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"
+                    android:text="技能介绍:"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background = "@drawable/skillbackground"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/ImageView1.0"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/illaoi_p"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="古神先知(被动):每隔一段时间，俄洛伊就会在附近的墙上召唤出一条触手。触手可以与其它技能产生互动，并可被杀死，或是在俄洛伊离去一分钟后进入休眠状态。"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background = "@drawable/skillbackground">
+                <ImageView
+                    android:id="@+id/ImageView1.1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/illaoi_q"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="top|center_vertical" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="触手猛击(Q):被动：触手在命中敌方英雄时，会为俄洛伊恢复一部分的已损失生命值。
+主动：俄洛伊召唤出一条触手，向指定的方向猛击，对命中的所有敌人造成120/130/140/150/160%物理伤害。"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background = "@drawable/skillbackground">
+                <ImageView
+                    android:id="@+id/ImageView1.2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/illaoi_w"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="严酷训诫(W):俄洛伊下一次普通攻击会冲向目标，造成额外的15/35/55/75/95(+1.1)物理伤害，随后会令附近的所有触手攻击她的目标。"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background = "@drawable/skillbackground">
+                <ImageView
+                    android:id="@+id/ImageView1.3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/illaoi_e"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="灵魂试炼(E):被动：触手会周期性地攻击灵魂与本体，对所有命中的目标造成物理伤害。
+主动：俄洛伊朝一个方向放出触须，命中一个敌方英雄后可将对方的灵魂扯向自己。当俄洛伊和她的盟友攻击灵魂时，会将一部分伤害传递到本体身上。如果俄洛伊和盟友摧毁了灵魂，或是英雄的本体逃开自己的灵魂太远时，就会被大幅减速，并在周围生出触手，攻击自己以及盟友。触手会攻击灵魂与本体，对所有命中的敌人造成25/30/35/40/45%(+0.08每100AD)物理伤害。"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background = "@drawable/skillbackground">
+                <ImageView
+                    android:id="@+id/ImageView1.4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/illaoi_r"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="过界信仰(R):俄洛伊跃至高空，随即将手中的神像砸向地面，对范围内的敌人造成150/250/350%(+0.5)物理伤害，并在命中的每个敌方英雄身旁召唤出一条触手。当过界信仰激活时，严酷训诫的冷却时间将会大幅缩短。"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

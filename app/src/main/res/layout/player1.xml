@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/back11">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Clearlove"
+        android:textSize="35dp"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#bf2d2d" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:orientation="vertical"
+        android:id="@+id/tabHost">
+
+    <TextView
+        android:textColor="#bf2d2d"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="原名：明凯"
+        android:id="@+id/textView2" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="37dp">
+        <TextView
+            android:textColor="#bf2d2d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="效力队伍："
+            android:id="@+id/textView3" />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:id="@+id/ImageView1"
+            android:src="@drawable/edg2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:weightSum="1">
+        <TextView
+            android:textColor="#bf2d2d"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="所在赛区："
+            android:id="@+id/textView4" />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:id="@+id/ImageView2"
+            android:src="@drawable/lpl"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" />
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_gravity="center_horizontal" >
+
+        <TextView
+            android:textColor="#bf2d2d"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="担任位置：打野"
+            android:id="@+id/textView5" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:weightSum="1">
+        <TextView
+            android:textColor="#bf2d2d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="代表英雄："
+            android:id="@+id/textView6" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView2"
+            android:src="@drawable/yifulin"/>
+    </TableRow>
+    <TextView
+        android:textColor="#bf2d2d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="获得荣誉：2015MSI季中赛世界冠军 2012TGA冠军  2014LPL夏季赛冠军 2014德玛西亚杯冠军                     "
+        android:id="@+id/textView7" />
+    <ImageView
+        android:layout_width="358dp"
+        android:layout_height="223dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/clearlove" />
+    <TextView
+        android:textColor="#bf2d2d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="评价：强大的操作和意识以及出色的GANK能力与反野能力，让他成为世界级打野选手。曾多次登顶国服电信一区RANK榜第一，常被称为“国服第一打野”。"
+        android:id="@+id/textView8" />
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>

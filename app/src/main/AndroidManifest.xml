@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="cn.edu.sjtu.valoraner" >
+    package="cn.edu.sjtu.valoraner"
+    android:versionCode="1"
+    android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="21"
-        android:targetSdkVersion="21" />
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
     <application
         android:allowBackup="true"
-        android:icon="@drawable/va"
-        android:label="@string/app_name"
+        android:icon="@drawable/valoraner"
+        android:label="valoraner"
         android:theme="@style/AppTheme" >
+        ]
         <activity
-            android:name=".MainActivity"
+            android:name="cn.edu.sjtu.valoraner.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,30 +23,60 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"
-            android:label="main_time"></activity>
+        <activity
+            android:name="cn.edu.sjtu.valoraner.LoginActivity"
+            android:label="main_time" />
+        <activity
+            android:name="cn.edu.sjtu.valoraner.RegisterActivity"
+            android:label="register_time" />
+        <activity
+            android:name="cn.edu.sjtu.valoraner.UsrActivity"
+            android:label="usr_time" />
+        <activity
+            android:name="cn.edu.sjtu.valoraner.MatchActivity"
+            android:label="match_time" />
+        <activity
+            android:name="cn.edu.sjtu.valoraner.DataActivity"
+            android:label="积分榜" />
+        <activity
+            android:name="cn.edu.sjtu.valoraner.PlayerActivity"
+            android:label="player_time" />
+        <activity
+            android:name="cn.edu.sjtu.valoraner.HeroActivity"
+            android:label="hero_time" />
+        <activity
+            android:name="cn.edu.sjtu.valoraner.HeroIntroduce1"
+            android:label="hero_time" />
+        <activity
+            android:name="cn.edu.sjtu.valoraner.HeroIntroduce2"
+            android:label="hero_time" />
+        <activity
+            android:name="cn.edu.sjtu.valoraner.HeroIntroduce3"
+            android:label="hero_time" />
+        <activity
+            android:name="cn.edu.sjtu.valoraner.HeroIntroduce4"
+            android:label="hero_time" />
 
-        <activity android:name=".RegisterActivity"
-            android:label="register_time"></activity>
+        <Fragment
+            android:name=".Fragment1"
+            android:label="main_time" />
+        <Fragment
+            android:name=".Fragment2"
+            android:label="main_time" />
+        <Fragment
+            android:name=".Fragment3"
+            android:label="main_time" />
+        <Fragment
+            android:name=".Fragment4"
+            android:label="main_time" />
+        <activity android:name=".Player1Activity"
+            android:label="players_time"></activity>
 
-        <activity android:name=".UsrActivity"
-            android:label="usr_time"></activity>
+        <activity android:name=".Player2Activity"
+            android:label="players_time"></activity>
 
-        <activity android:name=".MatchActivity"
-            android:label="match_time"></activity>
-
-        <activity android:name=".DataActivity"
-            android:label="data_time"></activity>
-
-        <activity android:name=".PlayerActivity"
-            android:label="player_time"></activity>
-
-        <activity android:name=".HeroActivity"
-            android:label="hero_time"></activity>
-
-        <activity android:name=".HeroIntroduce1"
-            android:label="hero_time"></activity>
-
+        <activity android:name=".Player3Activity"
+            android:label="players_time"></activity>
     </application>
 
 </manifest>

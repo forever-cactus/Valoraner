@@ -2,11 +2,23 @@ package cn.edu.sjtu.valoraner;
 
 import android.app.Application;
 
+import java.util.concurrent.ConcurrentLinkedQueue;
+
 /**
  * Created by shqgo on 2016/4/17.
  */
-public class Usrs extends Application{
-    public String getName()
+public class Usrs{
+    private Usrs(){}
+
+    public static String name;
+    public static String code;
+    public static String phone;
+    public static String year;
+    public static String month;
+    public static String day;
+    public static String nation;
+
+    /*public String getName()
     {
         return name;
     }
@@ -47,7 +59,6 @@ public class Usrs extends Application{
         phone=e;
     }
 
-    private String name;
     private String b_y;
     private String b_m;
     private String b_d;
@@ -69,5 +80,5 @@ public class Usrs extends Application{
 
     public void setB_d(String b_d) {
         this.b_d = b_d;
-    }
+    }*/
 }

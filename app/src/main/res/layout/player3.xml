@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/back11">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="#bf2d2d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="bengi"
+                android:textSize="35dp"
+                android:id="@+id/textView"
+                android:layout_gravity="center_horizontal" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"></TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:orientation="vertical"
+                android:id="@+id/tabHost">
+
+                <TextView
+                    android:textColor="#bf2d2d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="原名：倍性雄"
+                    android:id="@+id/textView2" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="37dp">
+                <TextView
+                    android:textColor="#bf2d2d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="效力队伍："
+                    android:id="@+id/textView3" />
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/ImageView1"
+                    android:src="@drawable/skttm2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:weightSum="1">
+                <TextView
+                    android:textColor="#bf2d2d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="所在赛区："
+                    android:id="@+id/textView4" />
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/ImageView2"
+                    android:src="@drawable/lck"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_gravity="center_horizontal" >
+
+                <TextView
+                    android:textColor="#bf2d2d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="担任位置：打野"
+                    android:id="@+id/textView5" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:weightSum="1">
+                <TextView
+                    android:textColor="#bf2d2d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="代表英雄："
+                    android:id="@+id/textView6" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView2"
+                    android:src="@drawable/elise"/>
+            </TableRow>
+            <TextView
+                android:textColor="#bf2d2d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="获得荣誉：2015赛季总决赛冠军  S4总决赛世界冠军"
+                android:id="@+id/textView7" />
+            <ImageView
+                android:layout_width="358dp"
+                android:layout_height="223dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/bengiph" />
+            <TextView
+                android:textColor="#bf2d2d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="评价：&quot;The JUNGLE&quot;Bengi，这位LOL史上与队友Faker，教练kkOma成为了唯一夺得了两届S系列冠军的3个人，可谓是创造了属于自己的历史！"
+                android:id="@+id/textView8" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

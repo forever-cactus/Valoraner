@@ -16,14 +16,14 @@ import android.widget.ImageButton;
 
 
 public class HeroActivity extends Activity {
-    ImageButton imagebutton;
+    ImageButton imagebutton1,imagebutton2,imageButton3,imageButton4;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hero);
-        imagebutton = (ImageButton) this.findViewById(R.id.ImageView1);
-        imagebutton.setOnClickListener(new View.OnClickListener() {
+        imagebutton1 = (ImageButton) this.findViewById(R.id.ImageView1);
+        imagebutton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
@@ -32,5 +32,36 @@ public class HeroActivity extends Activity {
 
             }
         });
+        imagebutton2 = (ImageButton) this.findViewById(R.id.ImageView2);
+        imagebutton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(HeroActivity.this, HeroIntroduce2.class);
+                startActivity(intent);
+
+            }
+        });
+        imageButton3 = (ImageButton) this.findViewById(R.id.ImageView3);
+        imageButton3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(HeroActivity.this, HeroIntroduce3.class);
+                startActivity(intent);
+
+            }
+        });
+        imageButton4 = (ImageButton) this.findViewById(R.id.ImageView4);
+        imageButton4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(HeroActivity.this, HeroIntroduce4.class);
+                startActivity(intent);
+
+            }
+        });
     }
 }
+

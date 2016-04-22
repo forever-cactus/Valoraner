@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="英雄介绍"
+                android:textSize="30sp"
+                android:gravity="center_horizontal"
+                android:background = "@drawable/skillbackground"
+                android:textColor="#ffffff" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="89dp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:background = "@drawable/skillbackground">
+                <ImageView
+                    android:id="@+id/ImageView1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/jhin"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="戏命师-烬                                 金币：6300                    点券：4500"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="0.20"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:orientation="horizontal"
+                android:background = "@drawable/skillbackground">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"
+                    android:text="技能介绍:"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background = "@drawable/skillbackground"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/ImageView1.0"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/skill5"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="低语(被动):烬手中的枪——“低语”填有四发子弹。最后一发子弹必定暴击，并根据目标已损失的生命值造成额外15/20/25%的伤害，对建筑则造成44%的伤害且不造成额外伤害。四发子弹发射完毕后，烬需要一些时间来重新装弹。
+烬的暴击伤害为150%，低于正常的暴击，而且他的攻速也不会从攻速加成中获益。取而代之的是，烬会从一切可提高攻速和暴击的装备及符文中获得2%-40%(+4%每10%暴击几率)(+2.5%每10%额外攻速)的攻击力加成。此外，暴击时还会提供一个10%(+1%每40%的攻速加成)的移动速度加成，持续2秒。"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background = "@drawable/skillbackground">
+                <ImageView
+                    android:id="@+id/ImageView1.1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/skill6"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="top|center_vertical" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="曼舞手雷(Q):烬朝着目标敌人扔出一颗手雷，手雷会造成50/75/100/125/150(+0.3/0.35/0.4/0.45/0.5)(+0.6)物理伤害，然后弹跳到附近的一个还未被此技能命中的目标上。手雷最多可命中4个目标。手雷每击杀一个单位，它的后续弹跳伤害就会提升35%。"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background = "@drawable/skillbackground">
+                <ImageView
+                    android:id="@+id/ImageView1.2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/skill7"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="致命华彩(W):烬进行一次远程射击，子弹会在命中第一个敌方英雄后停下，并对其造成50/85/120/155/190(+0.7)物理伤害，且会对沿途命中的小兵和野怪造成65%伤害。
+　　如果被【W致命华彩】命中的敌方英雄在前4秒被烬的普攻、陷阱或友方英雄给命中过，那么这个英雄还会被禁锢0.75/1/1.25/1.5/1.75秒，并为烬提供相当于他暴击时的移动速度加成。"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background = "@drawable/skillbackground">
+                <ImageView
+                    android:id="@+id/ImageView1.3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/skill8"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="万众倾倒(E):烬在目标区域放置一个隐形的莲花陷阱，陷阱可持续2分钟并且会在敌人经过时激活，让敌人暴露位置4秒。
+陷阱会留下一块区域，区域内的敌人会被减速35%。2秒后，区域会爆炸，造成20/80/140/200/260(+1.2)(+1)魔法伤害(后续弹跳会对小兵和野怪造成65%伤害)。
+烬每过秒就可以准备好一个新的陷阱，并且最多可同时持有2个陷阱。
+绚葬之华 -当烬击杀了一名敌方英雄时，一个莲花陷阱就会在该敌方英雄阵亡的地方产生并爆炸。"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background = "@drawable/skillbackground">
+                <ImageView
+                    android:id="@+id/ImageView1.4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/skill9"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="完美谢幕(R):烬架好武器并开始引导，可对前方锥形范围进行4次射程极远的超级射击。超级射击在命中第一个敌方英雄后会停下，使该英雄减速80%，持续0.75秒并造成50/125/200(+0.25)物理伤害，且目标的每1%已损失生命值，都会让超级射击的伤害提升2%。第四次射击会暴击并造成100%x(1+额外暴击伤害)的伤害。
+如果提前取消，那么每次未发射的超级射击都会为这个技能返还10%的冷却时间。
+最小伤害：50/125/200(+0.25)
+最大非第四发伤害：150/375/600(+0.75)"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

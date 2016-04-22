@@ -56,6 +56,20 @@ public class MainActivity extends Activity {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this, LoginActivity.class);
                 startActivity(intent);
+                cursor.moveToFirst();
+                Usrs.name=cursor.getString(cursor.getColumnIndex("name"));
+                int nameColumnIndex1 = cursor.getColumnIndex("code");
+                Usrs.code=cursor.getString(nameColumnIndex1);
+                int nameColumnIndex2 = cursor.getColumnIndex("nation");
+                Usrs.nation=cursor.getString(nameColumnIndex2);
+                int nameColumnIndex3 = cursor.getColumnIndex("phone");
+                Usrs.phone=cursor.getString(nameColumnIndex3);
+                int nameColumnIndex4 = cursor.getColumnIndex("year");
+                Usrs.year=cursor.getString(nameColumnIndex4);
+                int nameColumnIndex5 = cursor.getColumnIndex("month");
+                Usrs.month=cursor.getString(nameColumnIndex5);
+                int nameColumnIndex6 = cursor.getColumnIndex("day");
+                Usrs.day=cursor.getString(nameColumnIndex6);
             }
             cursor.close();
         }

@@ -33,7 +33,6 @@ public class RegisterActivity extends Activity{
     private ArrayAdapter<String> adapterSpYear;
     private ArrayAdapter<String> adapterSpMonth;
     private ArrayAdapter<String> adapterSpDay;
-    private Usrs usrs =new Usrs();
     private String name;
     private String code;
     private String phone;
